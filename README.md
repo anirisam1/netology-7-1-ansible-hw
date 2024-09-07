@@ -31,32 +31,9 @@
 
 1. `Скачать какой-либо архив, создать папку для распаковки и распаковать скаченный архив. Например, можете использовать официальный сайт и зеркало Apache Kafka. При этом можно скачать как исходный код, так и бинарные файлы, запакованные в архив — в нашем задании не принципиально.`
 
-![ссылка на плейбук](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/playbooks/playbook1-1.yml)
+[ссылка на плейбук](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/playbooks/playbook1-1.yml)
 
 [1-1-1.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-1-1.png)
-\```
-- name: zadanie 1-1
-  hosts: my_host
-  become: yes
-  become_user: root
-
-  tasks:
-
-  - name: Download kafka archive
-    get_url:
-      url: "https://downloads.apache.org/kafka/3.7.1/kafka-3.7.1-src.tgz"
-      dest: "/tmp/"
-
-  - name: create dir
-    file: path=/opt/kafka
-          state=directory
-
-  - name: Unarchive kafka
-    unarchive:
-     remote_src: yes
-     src: "/tmp/kafka-3.7.1-src.tgz"
-     dest: "/opt/kafka/"
-\```
 ![1-1-2.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-1-2.png)
 
 3. `Установить пакет tuned из стандартного репозитория вашей ОС. Запустить его, как демон — конфигурационный файл systemd появится автоматически при установке. Добавить tuned в автозагрузку.`
