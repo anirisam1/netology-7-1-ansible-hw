@@ -30,25 +30,9 @@
 Плейбуки должны:
 
 1. `Скачать какой-либо архив, создать папку для распаковки и распаковать скаченный архив. Например, можете использовать официальный сайт и зеркало Apache Kafka. При этом можно скачать как исходный код, так и бинарные файлы, запакованные в архив — в нашем задании не принципиально.`
-![1-1-1.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-1-1.png)`
-![1-1-2.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-1-2.png)`
+![1-1-1.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-1-1.png)
+![1-1-2.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-1-2.png)
 
-3. `Заполните здесь этапы выполнения, если требуется ....`
-
-
-```
-Поле для вставки кода...
-....
-....
-....
-....
-```
-
-`При необходимости прикрепитe сюда скриншоты
-![1-1-1.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-1-1.png)`
-
-
----
 
 ### Задание 2
 
