@@ -30,13 +30,16 @@
 Плейбуки должны:
 
 1. `Скачать какой-либо архив, создать папку для распаковки и распаковать скаченный архив. Например, можете использовать официальный сайт и зеркало Apache Kafka. При этом можно скачать как исходный код, так и бинарные файлы, запакованные в архив — в нашем задании не принципиально.`
+[ссылка на плейбук](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/playbooks/playbook1-1.yml)
 ![1-1-1.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-1-1.png)
 ![1-1-2.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-1-2.png)
 
+2. `Установить пакет tuned из стандартного репозитория вашей ОС. Запустить его, как демон — конфигурационный файл systemd появится автоматически при установке. Добавить tuned в автозагрузку.`
+[ссылка на плейбук](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/playbooks/playbook1-2.yml)
+![1-2-1.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-2-1.png)
+![1-2-2.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-2-2.png)
 
 ### Задание 2
-
-`Приведите ответ в свободной форме........`
 
 1. `Заполните здесь этапы выполнения, если требуется ....`
 2. `Заполните здесь этапы выполнения, если требуется ....`
