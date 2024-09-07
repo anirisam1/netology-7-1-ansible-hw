@@ -1,0 +1,17 @@
+- name: zadanie 1-2
+  hosts: my_host
+  become: yes
+  become_user: root
+
+  tasks:
+
+  - name: install tuned package
+    apt: 
+      name: tuned
+      state: present
+
+  - name: enable on boot and start tuned
+    service:
+      name: tuned
+      state: started
+      enabled: yes

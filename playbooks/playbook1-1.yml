@@ -1,0 +1,21 @@
+- name: zadanie 1-1
+  hosts: my_host
+  become: yes
+  become_user: root
+
+  tasks:
+
+  - name: Download kafka archive
+    get_url:
+      url: "https://downloads.apache.org/kafka/3.7.1/kafka-3.7.1-src.tgz"
+      dest: "/tmp/"
+
+  - name: create dir
+    file: path=/opt/kafka
+          state=directory
+
+  - name: Unarchive kafka
+    unarchive:
+     remote_src: yes
+     src: "/tmp/kafka-3.7.1-src.tgz"
+     dest: "/opt/kafka/"
