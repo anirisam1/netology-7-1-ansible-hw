@@ -42,7 +42,7 @@
 3. `Изменить приветствие системы (motd) при входе на любое другое. Пожалуйста, в этом задании используйте переменную для задания приветствия. Переменную можно задавать любым удобным способом.`
 
 [ссылка на плейбук](https://github.com/anirisam1/netology-7-1-ansible-hw/tree/main/roles/ansible-motd_1-3)
-![1-3-1.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-3-1.png)
+![task3-1.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/task3-1.png)
 
 
 ### Задание 2
