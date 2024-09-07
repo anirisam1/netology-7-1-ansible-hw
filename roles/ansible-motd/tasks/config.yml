@@ -1,22 +1,8 @@
 ---
-- name: put 00-header into /etc/update-motd.d
-  copy:
-    src: 00-header
-    dest: /etc/update-motd.d/
-    owner: root
-    mode: '0755'
-
-- name: put 10-sysinfo into /etc/update-motd.d
-  copy:
-    src: 10-sysinfo
-    dest: /etc/update-motd.d/
-    owner: root
-    mode: '0755'
-
-- name: put 90-footer into /etc/update-motd.d
-  copy:
-    src: 90-footer
-    dest: /etc/update-motd.d/
+- name: put 00-header /etc/update-motd.d
+  template:
+    src: 00-header.j2
+    dest: /etc/update-motd.d/00-header
     owner: root
     mode: '0755'
 
