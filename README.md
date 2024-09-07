@@ -57,12 +57,13 @@
      src: "/tmp/kafka-3.7.1-src.tgz"
      dest: "/opt/kafka/"
 ```
-![1-1-2.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-1-2.png)
 
-3. `Установить пакет tuned из стандартного репозитория вашей ОС. Запустить его, как демон — конфигурационный файл systemd появится автоматически при установке. Добавить tuned в автозагрузку.`
+2. `Установить пакет tuned из стандартного репозитория вашей ОС. Запустить его, как демон — конфигурационный файл systemd появится автоматически при установке. Добавить tuned в автозагрузку.`
+
 [ссылка на плейбук](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/playbooks/playbook1-2.yml)
 ![1-2-1.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-2-1.png)
-![1-2-2.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-2-2.png)
+
+3. `Изменить приветствие системы (motd) при входе на любое другое. Пожалуйста, в этом задании используйте переменную для задания приветствия. Переменную можно задавать любым удобным способом.`
 
 ### Задание 2
 
