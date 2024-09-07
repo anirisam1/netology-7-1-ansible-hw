@@ -1,0 +1,1 @@
+MOTD_VAR_1: "figlet $(hostname -s)"

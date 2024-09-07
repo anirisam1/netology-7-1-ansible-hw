@@ -1,0 +1,6 @@
+- name: zadanie 2-1
+  hosts: my_host
+  become: yes
+  become_user: root
+  roles:
+    - ansible-motd_2-1

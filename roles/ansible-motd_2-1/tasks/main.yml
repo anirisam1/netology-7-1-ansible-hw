@@ -1,0 +1,5 @@
+- name: Install Packages
+  include: install.yml
+
+- name: Deploy Configuration
+  include: config.yml

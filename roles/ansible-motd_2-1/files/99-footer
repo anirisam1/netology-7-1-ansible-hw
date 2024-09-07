@@ -1,0 +1,8 @@
+#!/bin/sh
+[ -f /etc/motd.tail ] &&  cat /etc/motd.tail || true
+
+printf "\n"
+echo "----------------------------------------------"
+echo "$(tput -T xterm setaf 1)Желаем хорошего дня системному администратору!$(tput -T xterm sgr0)"
+echo "----------------------------------------------"
+printf "\n"

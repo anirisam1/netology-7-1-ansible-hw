@@ -1,0 +1,7 @@
+---
+- name: Install figlet, lsb-release
+  apt:
+    pkg:
+    - figlet
+    - lsb-release
+
