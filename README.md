@@ -33,7 +33,7 @@
 
 [ссылка на плейбук](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/playbooks/playbook1-1.yml)
 
-[1-1-1.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-1-1.png)
+![1-1-1.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-1-1.png)
 ![1-1-2.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/1-1-2.png)
 
 3. `Установить пакет tuned из стандартного репозитория вашей ОС. Запустить его, как демон — конфигурационный файл systemd появится автоматически при установке. Добавить tuned в автозагрузку.`
