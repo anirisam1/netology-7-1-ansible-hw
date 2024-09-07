@@ -43,7 +43,7 @@
 
 [ссылка на плейбук](https://github.com/anirisam1/netology-7-1-ansible-hw/tree/main/roles/ansible-motd_1-3)
 ![task1-3-1.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/task1-3-1.png)
-![task1-3-3.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/task1-3-3.png)
+![task1-3-2.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/task1-3-3.png)
 
 
 ### Задание 2
