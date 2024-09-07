@@ -50,7 +50,9 @@
 `Выполните действия, приложите файлы с модифицированным плейбуком и вывод выполнения.
 Модифицируйте плейбук из пункта 3, задания 1. В качестве приветствия он должен установить IP-адрес и hostname управляемого хоста, пожелание хорошего дня системному администратору.`
 
-
+[ссылка на плейбук](https://github.com/anirisam1/netology-7-1-ansible-hw/tree/main/roles/ansible-motd_2-1)
+![task2-1-1.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/task2-1-1.png)
+![task2-1-2.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/task2-1-2.png)
 
 ### Задание 3
 
