@@ -71,7 +71,9 @@
 - предоставьте скриншот браузера, отображающего сконфигурированный index.html в качестве сайта.
 
 [ссылка на плейбук](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/playbooks/playbook3-1.yml)
+
 [ссылка на роль](https://github.com/anirisam1/netology-7-1-ansible-hw/tree/main/roles/ansible-7-1-task3)
+
 ![task3-1-1.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/task3-1-1.png)
 ![task3-1-2.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/task3-1-2.png)
 ![task3-1-3.png](https://github.com/anirisam1/netology-7-1-ansible-hw/blob/main/img/task3-1-3.png)
