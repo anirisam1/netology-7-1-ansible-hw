@@ -1,0 +1,28 @@
+{% for host in groups['servers'] %}
+
+<!DOCTYPE html>
+<html>
+<title>Host info</title>
+    <style>
+        .tab4 {
+            tab-size: 4;
+    </style>
+<body>
+<h1 style="color: green">Hostname: {{ hostvars[host].ansible_facts.hostname }}</h1>
+<h2>
+<p><b>ip_adress:</b> {{ hostvars[host].ansible_facts.default_ipv4.address }}</b></p>
+<p><b>CPU:</b></p>
+<p><pre class="tab4">	info: {{ ansible_processor | default('NONE',true) }}</pre></p>
+{# <p><pre class="tab4">	total: {{ hostvars[host].ansible_facts.ansible_processor_nproc }}</pre></p> #}
+<p><b>RAM:</b></p>
+{# <p><pre class="tab4">	{{ hostvars[host].ansible_facts.ansible_memtotal_mb }}</pre></p> #}
+<p><pre class="tab4">   {{ ansible_memtotal_mb | default('NONE',true) }}Mb</pre></p>
+<p><b>HDD:</b></p>
+{# <p><pre class="tab4">	device: {{ hostvars[host].ansible_facts.device }}</pre></p>
+<p><pre class="tab4">	size total: {{ hostvars[host].ansible_facts.size_total }}</pre></p> #}
+</h2>
+
+</body>
+</html>
+
+{% endfor %}

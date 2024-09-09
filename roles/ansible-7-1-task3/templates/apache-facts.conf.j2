@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+    #Имя хоста
+    ServerName {{ inventory_hostname }}
+    #Корневая папка хоста
+    DocumentRoot /var/www/html
+    <Directory /var/www/html>
+        #Разрешение на перезапись всех директив при помощи .htaccess
+        AllowOverride All
+    </Directory>
+</VirtualHost>

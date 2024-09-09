@@ -1,0 +1,7 @@
+- name: zadanie 3
+  hosts: servers
+  become: yes
+  become_user: root
+  gather_facts: true
+  roles:
+    - ansible-7-1-task3

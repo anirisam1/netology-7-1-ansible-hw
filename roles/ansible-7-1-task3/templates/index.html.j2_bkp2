@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>host info</title>
+    </head>
+    <body>
+        <h1 style="margin: 0; padding: 0;">Database Inventory Report</h1>
+        <table style="margin: 0;">
+            <thead>
+                <tr>
+                    <th>Hostname</th>
+                    <th>IPs</th>
+                    <th>RAM (MB)</th>
+                    <th>Cores</th>
+                    <th>Proc Type</th>
+		    <th>HDD</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for host in groups['servers'] %}
+                    <tr>
+                        <td>{{ hostvars[host]['inventory_hostname'] }}</td>
+                        <td>{{ hostvars[host].ansible_facts["default_ipv4"]}}</td>
+                        <td>{{ hostvars[host].ansible_facts['memory_mb']['real']['total'] }}</td>
+                        <td>{{ hostvars[host].ansible_facts['processor_cores'] }}</td>
+                        <td>{{ hostvars[host].ansible_facts['processor'] }}</td>
+			<td>{{ hostvars[host].ansible_facts['mounts']}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>
+

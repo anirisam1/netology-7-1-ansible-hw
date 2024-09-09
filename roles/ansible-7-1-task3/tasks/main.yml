@@ -1,0 +1,42 @@
+- name: install apache2
+  apt:
+    name: apache2
+    state: present
+
+- set_fact:
+    diskinfo: "{{ diskinfo | default({}) | combine({ item.key: { 'size': item.value.size }  }) }}"
+  with_dict: "{{ ansible_facts.devices }}"
+
+- name: deploy index.html
+  template:
+    src: index.html.j2
+    dest: /var/www/html/index.html
+    mode: 0644
+ 
+- name: unactive default apache config
+  file:
+    state: absent
+    path: /etc/apache2/sites-enabled/000-default.conf
+  notify:
+    - restart apache2
+
+- name: deploy apache conf
+  template:
+    src: apache-facts.conf.j2
+    dest: /etc/apache2/sites-available/apache-facts.conf
+    mode: 0644
+  notify:
+    - restart apache2
+
+- name: create symbolic link
+  file:
+    src: /etc/apache2/sites-available/apache-facts.conf
+    dest: /etc/apache2/sites-enabled/apache-facts.conf
+    state: link
+
+- name: enable on boot and start apache2
+  service:
+    name: apache2
+    state: started
+    enabled: yes
+

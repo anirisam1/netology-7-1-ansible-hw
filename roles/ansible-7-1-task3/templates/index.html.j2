@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<title>Host info</title>
+    <style>
+        .tab4 {
+            tab-size: 4;
+    </style>
+<body>
+<h1 style="color: green">Hostname: {{ ansible_facts.hostname }}</h1>
+<h2>
+<p><b>ip_adress:</b> {{ ansible_facts.default_ipv4.address }}</b></p>
+
+<p><b>CPU:</b></p>
+<p><pre class="tab4">	info: {{ ansible_facts['processor'] }}</pre></p>
+<p><pre class="tab4">	total: {{ ansible_facts['processor_cores'] }}</pre></p>
+
+<p><b>RAM (Mb):</b></p>
+<p><pre class="tab4">	{{ ansible_facts['memory_mb']['real']['total'] }}</pre></p>
+
+<p><b>HDD:</b></p>
+<p><pre class="tab4">   all devices: {{ diskinfo }} </pre></p>
+<p><pre class="tab4">   main name: {{ ansible_facts['devices'] | map('regex_search', '^dm-0.*') | select('string') | list }}</pre></p>
+<p><pre class="tab4">   size total: {{ ansible_facts['devices']['dm-0']['size'] }}</pre></p>
+</h2>
+
+</body>
+</html>
